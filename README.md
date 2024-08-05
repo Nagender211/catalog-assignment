@@ -1,6 +1,6 @@
 # catalog-assignment
 
-# To run the project:
+To run the project:
 
 # Go to the terminal and run the command "npm install".
 # After all the packages are installed, run the command "npm run dev".
