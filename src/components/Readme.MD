@@ -1,5 +1,3 @@
-# catalog-assignment
-
 # To run the project:
 
 # Go to the terminal and run the command "npm install".

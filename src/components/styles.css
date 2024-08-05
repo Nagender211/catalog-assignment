@@ -1,0 +1,313 @@
+/* Specific button styling */
+.fullscreen-button {
+  cursor: pointer;
+  position: sticky;
+  top: 140px;
+  left: -400px;
+  font-family: Circular Std;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.77px;
+  text-align: left;
+  z-index: 1;
+
+ /* Green for fullscreen */
+}
+.fullscreen-button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Same shadow effect on active */
+}
+.compare-button {
+  position: absolute;
+  top: 140px;
+  margin-left: -150px;
+  left: -100px;
+
+}
+.compare-btn{
+  position: absolute;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.77px;
+  text-align: left;
+
+}
+
+
+/* Container for buttons */
+.timeframe-buttons {
+  position: relative;
+  display: flex;
+  gap: 6px;
+  margin-top: 50px;
+  margin-left: 80px; /* Gap between buttons */
+}
+
+
+
+/* Focus state for accessibility */
+
+/* Ensure the main container takes up the full viewport height */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  margin-top: -10px;
+}
+
+/* Main content area, push content to the top */
+.content {
+  flex: 1; /* Take up remaining space */
+}
+
+/* Ensure the chart container is at the bottom */
+.chart-container {
+  position: relative;
+  padding: 20px;
+  border-top: 20px;
+  margin-top: 150px;
+ /* Optional: border for visual separation */
+}
+
+/* Position the navigation container */
+nav {
+  position: sticky; /* Fixes the position relative to the viewport */
+  left: 3%; /* 2% from the left edge */
+  top: 15%; /* 15% from the top edge */
+  display: flex; /* Arrange buttons horizontally */
+  gap: 10px;
+  z-index: 1; /* Space between buttons */
+}
+
+/* General button styling in navigation */
+nav button {
+  background-color: #b1ed74; /* Default background color */
+  color: #6F7177; /* Text color */
+  border: 1px solid #b644af; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside buttons */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Hover effect for buttons in navigation */
+nav button:hover {
+  background-color: #8acbe1; /* Slightly darker background on hover */
+  color: #000; /* Darker text color on hover */
+}
+
+/* Active button styling in navigation */
+nav button.active {
+  background-color: white; /* White background for active button */
+  color: #007bff; /* Text color for active button */
+  border: 1px solid #007bff;
+   /* Border color matching active background */
+}
+
+
+
+
+/* header */
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #333;
+}
+
+.currency-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.currency-info h1 {
+  margin: 0;
+}
+
+.currency-symbol {
+  position: absolute;
+  font-size: 0.8rem;
+  color: #cccccc;
+  margin-top: -0.2rem;
+  margin-left: 10rem;
+}
+.currency-symbol2 {
+  position: absolute;
+  font-size: 0.8rem;
+  color: #cccccc;
+  margin-top: -0.1rem;
+  margin-left: 9.01rem;
+}
+
+.change {
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+.currency1 {
+  margin-top: 2.2rem;
+  margin-left: 2.5rem;
+}
+
+.currency2 {
+  margin-top: 2.2rem;
+  margin-left: 8rem;
+}
+
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 839px;
+  margin: 0 auto;
+  margin-top: -20px;
+  
+}
+
+.chart-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.chart-buttons {
+  position: absolute;
+  display: flex;
+  gap: 3rem;
+  position: absolute;
+  top: -15%;
+  right: 80%;
+}
+
+/* .timeframe-buttons {
+  display: flex;
+  gap: 0.5rem;
+} */
+
+.time-frame {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.time-frame.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.fullscreen .chart-container {
+  height: 100vh;
+}
+
+.fullscreen .chart-buttons {
+  top: 10px;
+  right: 10px;
+}
+
+/* Update CryptoChart styles */
+.chart-container .recharts-responsive-container {
+  height: 343px !important;
+  width: 839px !important;
+  
+}
+
+/* Style for the total value at the end of the line */
+.recharts-line-dots circle:last-child {
+  fill: #ff6b6b;
+  stroke: #ff6b6b;
+  
+}
+
+/* Tooltip styles */
+.custom-tooltip {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.custom-tooltip p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+
+
+
+
+
+/* styles.css */
+.nav-underline-row {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center; /* Centers the items horizontally */
+}
+
+.nav-item {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 34px;
+  color: #6F7177;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #6F7177;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  color: black;
+  background-color: rgb(158, 73, 186);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+ 
+}
+
+hr {
+  margin-top: 2rem;
+  border: 1px solid white;
+}
+
+
+
+.char-graph{
+  position: relative;
+  left: -330px;
+}
+
+
+.exit-fullscreen-button{
+  
+  background-color: #0056b3;
+  top: -40px;
+  margin-top: 70px;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 2px;
+}
