@@ -38,6 +38,6 @@ To run the project:
  Users can compare currency values over different time frames (e.g., 1 week equals 7 days).
  User Interface Enhancements:
 
- Interactive buttons such as CompareButton and FullscreenButton enhance the user experience.
- The application is designed to be responsive and user-friendly.
- Real-time Updates: The application fetches real-time data, ensuring the currency values and comparisons are up-to-date.
+# Interactive buttons such as CompareButton and FullscreenButton enhance the user experience.
+# The application is designed to be responsive and user-friendly.
+# Real-time Updates: The application fetches real-time data, ensuring the currency values and comparisons are up-to-date.
