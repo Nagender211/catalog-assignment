@@ -1,16 +1,14 @@
 /* Specific button styling */
 .fullscreen-button {
   cursor: pointer;
-  position: sticky;
+  position: absolute;
   top: 140px;
-  left: -400px;
+  left: -330px;
   font-family: Circular Std;
   font-size: 18px;
   font-weight: 400;
   line-height: 22.77px;
   text-align: left;
-  z-index: 1;
-
  /* Green for fullscreen */
 }
 .fullscreen-button:active {
@@ -20,7 +18,7 @@
   position: absolute;
   top: 140px;
   margin-left: -150px;
-  left: -100px;
+  left: -50px;
 
 }
 .compare-btn{
@@ -40,9 +38,41 @@
   display: flex;
   gap: 6px;
   margin-top: 50px;
-  margin-left: 80px; /* Gap between buttons */
+  margin-left: 150px; /* Gap between buttons */
 }
 
+/* Styling for each timeframe button */
+.time-frame {
+  color: #495057; /* Text color */
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc; /* Add border for better visual appearance */
+  /* Default background color */
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+/* Hover effect */
+.time-frame:hover {
+  background-color: #ffffff; /* Slightly lighter background on hover */
+  color: #007efc; /* Darker text color */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Active state for the button */
+.time-frame.active {
+  background-color: #007bff; /* Active button background */
+  color: white; /* Text color for active button */
+  border: 1px solid #007bff; /* Border color matching active background */
+}
+
+.time-frame:active {
+  background-color: #0056b3; /* Darker shade for active button */
+  color: white; /* Text color for active button */
+  border: 1px solid #0056b3; /* Border color matching active background */
+}
 
 
 /* Focus state for accessibility */
@@ -71,12 +101,11 @@
 
 /* Position the navigation container */
 nav {
-  position: sticky; /* Fixes the position relative to the viewport */
+  position: fixed; /* Fixes the position relative to the viewport */
   left: 3%; /* 2% from the left edge */
   top: 15%; /* 15% from the top edge */
   display: flex; /* Arrange buttons horizontally */
-  gap: 10px;
-  z-index: 1; /* Space between buttons */
+  gap: 10px; /* Space between buttons */
 }
 
 /* General button styling in navigation */
@@ -298,8 +327,12 @@ hr {
 
 .char-graph{
   position: relative;
-  left: -330px;
+  left: -260px;
 }
+
+
+
+
 
 
 .exit-fullscreen-button{
@@ -308,6 +341,6 @@ hr {
   top: -40px;
   margin-top: 70px;
   cursor: pointer;
-  padding: 0;
+  padding: 10 10;
   border-radius: 2px;
 }
