@@ -1,4 +1,4 @@
- catalog-assignment
+ # catalog-assignment
 
 To run the project:
 
